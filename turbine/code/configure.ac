@@ -690,14 +690,6 @@ HAVE_R=0
 USE_R=0
 RCPP_PATH=0
 RINSIDE_PATH=0
-AC_ARG_ENABLE(r, # Drop this?  Almost guaranteed to fail.
-    AS_HELP_STRING([--enable-r],
-                   [Enable calling R language]),
-    [
-      HAVE_R=1
-      USE_R="/usr" # Acceptable default?
-    ])
-
 AC_ARG_WITH(rinside,
    AS_HELP_STRING([--with-rinside],
                    [Use this RInside directory]),
